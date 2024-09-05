@@ -40,12 +40,16 @@ const ProfilePage = () => {
                             <p><strong>Email Verified:</strong> {user?.email_verified ? "Yes" : "No"}</p>
                         </div>
 
-                        <button
+                        {/* <button
+                        //  /api/auth/logout
+                            onClick={() => fetch('/api/auth/logout', { method: 'POST' })}   
                           
                             className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600"
                         >
                             Sign Out
-                        </button>
+                        </button> */}
+
+                        <a href='/api/auth/logout' className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600">Sign Out</a>
                     </div>
             
             </div>
